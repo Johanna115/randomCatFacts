@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка четности числа на JavaScript</title>
+</head>
+<body>
+    <h1>Проверка четности числа</h1>
+
+    <label for="number">Введите число:</label>
+    <input type="number" id="number">
+    <button onclick="checkEvenOdd()">Проверить</button>
+
+    <div id="result"></div>
+
+    <script>
+        // Функция для проверки четности числа
+        function checkEvenOdd() {
+            // Получаем значение введенного числа
+            var num = document.getElementById("number").value;
+            
+            // Проверяем, является ли число четным или нечетным
+            if (num % 2 === 0) {
+                document.getElementById("result").innerText = num + " - четное число";
+            } else {
+                document.getElementById("result").innerText = num + " - нечетное число";
+            }
+        }
+    </script>
+</body>
+</html>
